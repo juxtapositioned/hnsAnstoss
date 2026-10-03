@@ -1,5 +1,5 @@
 {
-  "name": "football-god",
+  "name": "kreisklasse-comic",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "sim": "tsx src/sim.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "strip": "tsx src/strip.ts",
+    "heilige": "tsx src/heilige-strip.ts"
   },
   "devDependencies": {
     "@types/node": "^26.5.1",

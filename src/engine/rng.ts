@@ -17,3 +17,15 @@ export function shuffle<T>(items: T[], state: number): { items: T[]; state: numb
   }
   return { items: out, state };
 }
+
+/** Weighted pick. Returns the index. Weights must sum to > 0. */
+export function pickWeighted(weights: number[], state: number): { index: number; state: number } {
+  const total = weights.reduce((a, b) => a + b, 0);
+  const r = nextRandom(state);
+  let x = r.value * total;
+  for (let i = 0; i < weights.length; i++) {
+    x -= weights[i] ?? 0;
+    if (x < 0) return { index: i, state: r.state };
+  }
+  return { index: weights.length - 1, state: r.state };
+}

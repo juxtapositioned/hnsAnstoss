@@ -1,6 +1,6 @@
 # Football God — Comparable games, by how they function
 
-2026-09-14. Companion to [DESIGN.md](DESIGN.md). Two parts: a catalogue of games that share at
+2026-09-14. Written for the earlier Football God line (deleted 2026-09-25, git 209c306); the comparisons still apply to [DESIGN.md](DESIGN.md). Two parts: a catalogue of games that share at
 least one of our mechanisms (part A), then the lessons, each written as *what they do → what it
 would be in Football God → why bother* (part B). Sources are linked where I read them for this;
 *(memory)* marks games described from prior knowledge, not re-checked today.
